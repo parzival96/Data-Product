@@ -1,0 +1,38 @@
+Developing Data Products - Course Project
+========================================================
+author: Sri Vamsi.Y
+date: 7/8/2020
+autosize: true
+
+Application Overview
+========================================================
+
+- This app predicts the lengths of sepals and petals based on their widths.
+- Information for building the models is taken from the iris dataset in R.
+
+
+Documentation
+========================================================
+- This app includes a slider that helps in inputting values for predictions.
+- The step value for both the sliders is 0.1 .
+- Not more than one check box should be selected at a time.
+- The coloured point on the plot indicates the value plotted according to the slider value.
+
+
+
+Code for the models
+========================================================
+
+```{r, echo=TRUE}
+
+  model1 <- lm(Sepal.Length ~ Sepal.Width , data = iris)
+  model2 <- lm(Petal.Length ~ Petal.Width , data = iris)
+  c(coefficients(model1) , coefficients(model2))
+
+```
+
+References
+========================================================
+Github URL : https://github.com/parzival96/Data-Product
+
+Shiny App URL: https://parzival96.shinyapps.io/Data_Product/?_ga=2.27547260.1756203044.1594180606-1201027525.1594180606
